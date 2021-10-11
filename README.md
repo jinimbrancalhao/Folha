@@ -28,7 +28,7 @@ This app is a website for a fine-dining restaurant named Folha. It serves as an 
 
 [Trello](https://trello.com/b/IUqttuWT/folha)
 
-[Diagrams](https://lucid.app/lucidchart/bdcfc9da-1281-4c33-a9ce-df47ce789922/edit?invitationId=inv_d3409a7f-35cc-4063-98ea-a5bf503edfa1&page=0_0#)
+[Diagrams](https://lucid.app/lucidchart/bdcfc9da-1281-4c33-a9ce-df47ce789922/edit?viewport_loc=449%2C220%2C1098%2C1188%2C0_0&invitationId=inv_d3409a7f-35cc-4063-98ea-a5bf503edfa1)
 
 #### Deployed Link:
 

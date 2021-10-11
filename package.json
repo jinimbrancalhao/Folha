@@ -1,0 +1,31 @@
+{
+  "name": "folha",
+  "version": "1.0.0",
+  "description": "## Date: 10/10/2021",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinimbrancalhao/Folha.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinimbrancalhao/Folha/issues"
+  },
+  "homepage": "https://github.com/jinimbrancalhao/Folha#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "sequelize": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
