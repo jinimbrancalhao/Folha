@@ -13,6 +13,10 @@ module.exports = (sequelize, DataTypes) => {
   }
   Location.init(
     {
+      address: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
       city: {
         type: DataTypes.STRING,
         allowNull: false
