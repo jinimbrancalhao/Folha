@@ -13,10 +13,22 @@ module.exports = (sequelize, DataTypes) => {
   }
   Menu.init(
     {
-      name: DataTypes.STRING,
-      description: DataTypes.STRING,
-      price: DataTypes.INTEGER,
-      course: DataTypes.STRING
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      description: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      price: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+      },
+      course: {
+        type: DataTypes.STRING,
+        allowNull: false
+      }
     },
     {
       sequelize,

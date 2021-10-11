@@ -13,9 +13,18 @@ module.exports = (sequelize, DataTypes) => {
   }
   Location.init(
     {
-      city: DataTypes.STRING,
-      state: DataTypes.STRING,
-      hours: DataTypes.STRING
+      city: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      state: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      hours: {
+        type: DataTypes.STRING,
+        allowNull: false
+      }
     },
     {
       sequelize,

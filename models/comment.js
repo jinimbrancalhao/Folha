@@ -13,8 +13,14 @@ module.exports = (sequelize, DataTypes) => {
   }
   Comment.init(
     {
-      name: DataTypes.STRING,
-      content: DataTypes.STRING
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      content: {
+        type: DataTypes.STRING,
+        allowNull: false
+      }
     },
     {
       sequelize,
