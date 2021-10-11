@@ -10,7 +10,7 @@
 
 **_Description_**
 
-This app is a website for a fine-dining restaurant named Folha. It serves as an online reference for customers to learn about the restaurant, find restaurant locations, view the menu, and read reviews.
+This app is a website for a fine-dining restaurant named Folha. It serves as an online reference for customers to learn about the restaurant, find restaurant locations, view the menu, and create/read reviews.
 
 **_Technologies Used_**
 
