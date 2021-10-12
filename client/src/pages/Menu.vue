@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>PLEASE SELECT A MENU</h2>
-    <h3>Full Menu</h3>
+    <h3 @click="GetMenu">Full Menu</h3>
     <h3>Appetizers</h3>
     <h3>Full Menu</h3>
     <h3>Full Menu</h3>
@@ -19,9 +19,9 @@ export default {
   data: () => ({
     menu: []
   }),
-  mounted: function() {
-    this.GetMenu()
-  },
+  // mounted: function() {
+  //   this.GetMenu()
+  // },
   methods: {
     async GetMenu(){
       const res = await axios.get(
