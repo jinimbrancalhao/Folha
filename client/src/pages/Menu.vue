@@ -54,6 +54,12 @@ export default {
         'http://localhost:3001/api/menu/desserts'
       )
       this.menu = res.data
+    },
+    async GetDrinks(){
+      const res = await axios.get(
+        'http://localhost:3001/api/menu/drinks'
+      )
+      this.menu = res.data
     }
   }
 }
