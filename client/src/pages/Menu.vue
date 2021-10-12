@@ -1,20 +1,27 @@
 <template>
   <div>
     <h2>PLEASE SELECT A MENU</h2>
-    <h3 @click="GetMenu">Full Menu</h3>
-    <h3>Appetizers</h3>
-    <h3>Full Menu</h3>
-    <h3>Full Menu</h3>
+    <div>
+      <h3 @click="GetMenu">Full Menu</h3>
+      <h3>Appetizers</h3>
+      <h3>Entrees</h3>
+      <h3>Desserts</h3>
+      <h3>Drinks</h3>
+      <div v-for="item in menu" :key="item.id">
+        <MenuItem :name="item.name" :description="item.description" :price="item.price" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import MenuItem from '../components/MenuItem.vue'
 
 export default {
   name: 'Menu',
   components: {
-
+    MenuItem
   },
   data: () => ({
     menu: []
@@ -28,6 +35,7 @@ export default {
         'http://localhost:3001/api/menu'
       )
       this.menu = res.data
+      console.log(this.menu)
     }
   }
 }
