@@ -1,10 +1,16 @@
 <template>
   <div>
-
+    <h2>PLEASE SELECT A MENU</h2>
+    <h3>Full Menu</h3>
+    <h3>Appetizers</h3>
+    <h3>Full Menu</h3>
+    <h3>Full Menu</h3>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'Menu',
   components: {
@@ -13,8 +19,8 @@ export default {
   data: () => ({
     menu: []
   }),
-  mounted: function(){
-
+  mounted: function() {
+    this.GetMenu()
   },
   methods: {
     async GetMenu(){

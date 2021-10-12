@@ -36,9 +36,19 @@ const GetDesserts = async (req, res) => {
   }
 }
 
+const GetDrinks = async (req, res) => {
+  try {
+    const drinks = await Menu.findAll({ where: { course: 'Drinks' } })
+    res.send(drinks)
+  } catch (error) {
+    throw error
+  }
+}
+
 module.exports = {
   GetMenu,
   GetAppetizers,
   GetEntrees,
-  GetDesserts
+  GetDesserts,
+  GetDrinks
 }

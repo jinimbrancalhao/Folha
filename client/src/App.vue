@@ -4,7 +4,7 @@
       <Nav />
     </header>
     <main>
-      
+      <router-view></router-view>
     </main>
     
   </div>
