@@ -4,9 +4,9 @@
     <div>
       <h3 @click="GetMenu">Full Menu</h3>
       <h3 @click="GetAppetizers">Appetizers</h3>
-      <h3>Entrees</h3>
-      <h3>Desserts</h3>
-      <h3>Drinks</h3>
+      <h3 @click="GetEntrees">Entrees</h3>
+      <h3 @click="GetDesserts">Desserts</h3>
+      <h3 @click="GetDrinks">Drinks</h3>
       <div v-for="item in menu" :key="item.id">
         <MenuItem :name="item.name" :description="item.description" :price="item.price" />
       </div>
