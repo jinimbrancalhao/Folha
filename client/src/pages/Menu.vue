@@ -26,9 +26,6 @@ export default {
   data: () => ({
     menu: []
   }),
-  // mounted: function() {
-  //   this.GetMenu()
-  // },
   methods: {
     async GetMenu(){
       const res = await axios.get(
