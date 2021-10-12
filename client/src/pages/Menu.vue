@@ -43,18 +43,18 @@ export default {
       )
       this.menu = res.data
     },
-    // async GetAppetizers(){
-    //   const res = await axios.get(
-    //     'http://localhost:3001/api/menu/appetizers'
-    //   )
-    //   this.menu = res.data
-    // },
-    // async GetAppetizers(){
-    //   const res = await axios.get(
-    //     'http://localhost:3001/api/menu/appetizers'
-    //   )
-    //   this.menu = res.data
-    // },
+    async GetEntrees(){
+      const res = await axios.get(
+        'http://localhost:3001/api/menu/entrees'
+      )
+      this.menu = res.data
+    },
+    async GetDesserts(){
+      const res = await axios.get(
+        'http://localhost:3001/api/menu/desserts'
+      )
+      this.menu = res.data
+    }
   }
 }
 
