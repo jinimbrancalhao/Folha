@@ -3,7 +3,7 @@
     <h2>PLEASE SELECT A MENU</h2>
     <div>
       <h3 @click="GetMenu">Full Menu</h3>
-      <h3>Appetizers</h3>
+      <h3 @click="GetAppetizers">Appetizers</h3>
       <h3>Entrees</h3>
       <h3>Desserts</h3>
       <h3>Drinks</h3>
@@ -36,7 +36,25 @@ export default {
       )
       this.menu = res.data
       console.log(this.menu)
-    }
+    },
+    async GetAppetizers(){
+      const res = await axios.get(
+        'http://localhost:3001/api/menu/appetizers'
+      )
+      this.menu = res.data
+    },
+    // async GetAppetizers(){
+    //   const res = await axios.get(
+    //     'http://localhost:3001/api/menu/appetizers'
+    //   )
+    //   this.menu = res.data
+    // },
+    // async GetAppetizers(){
+    //   const res = await axios.get(
+    //     'http://localhost:3001/api/menu/appetizers'
+    //   )
+    //   this.menu = res.data
+    // },
   }
 }
 
