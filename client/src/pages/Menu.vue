@@ -2,11 +2,11 @@
   <div>
     <h2>PLEASE SELECT A MENU</h2>
     <div>
-      <h3 @click="GetMenu">Full Menu</h3>
-      <h3 @click="GetAppetizers">Appetizers</h3>
-      <h3 @click="GetEntrees">Entrees</h3>
-      <h3 @click="GetDesserts">Desserts</h3>
-      <h3 @click="GetDrinks">Drinks</h3>
+      <h3 @click="getMenu">Full Menu</h3>
+      <h3 @click="getAppetizers">Appetizers</h3>
+      <h3 @click="getEntrees">Entrees</h3>
+      <h3 @click="getDesserts">Desserts</h3>
+      <h3 @click="getDrinks">Drinks</h3>
       <div v-for="item in menu" :key="item.id">
         <MenuItem :name="item.name" :description="item.description" :price="item.price" />
       </div>
@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import axios from 'axios'
 import MenuItem from '../components/MenuItem.vue'
+import {GetMenu,GetAppetizers,GetEntrees,GetDesserts,GetDrinks} from '../services/MenuServices'
 
 export default {
   name: 'Menu',
@@ -27,36 +27,25 @@ export default {
     menu: []
   }),
   methods: {
-    async GetMenu(){
-      const res = await axios.get(
-        'http://localhost:3001/api/menu'
-      )
-      this.menu = res.data
-      console.log(this.menu)
+    async getMenu(){
+      const res = await GetMenu()
+      this.menu = res
     },
-    async GetAppetizers(){
-      const res = await axios.get(
-        'http://localhost:3001/api/menu/appetizers'
-      )
-      this.menu = res.data
+    async getAppetizers(){
+      const res = await GetAppetizers()
+      this.menu = res
     },
-    async GetEntrees(){
-      const res = await axios.get(
-        'http://localhost:3001/api/menu/entrees'
-      )
-      this.menu = res.data
+    async getEntrees(){
+      const res = await GetEntrees()
+      this.menu = res
     },
-    async GetDesserts(){
-      const res = await axios.get(
-        'http://localhost:3001/api/menu/desserts'
-      )
-      this.menu = res.data
+    async getDesserts(){
+      const res = await GetDesserts()
+      this.menu = res
     },
-    async GetDrinks(){
-      const res = await axios.get(
-        'http://localhost:3001/api/menu/drinks'
-      )
-      this.menu = res.data
+    async getDrinks(){
+      const res = await GetDrinks()
+      this.menu = res
     }
   }
 }
