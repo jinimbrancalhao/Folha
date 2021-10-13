@@ -2,9 +2,9 @@
   <div>
     <h2>Who are we?</h2>
     <h3>Comments</h3>
-    <CreateComment />
+    <!-- <CreateComment :comments="comments" @addComment="addComment" /> -->
     <div v-for="comment in comments" :key="comment.id">
-      <Comment :name="comment.name" :content="comment.content" @addComment="addComment" />
+      <Comment :name="comment.name" :content="comment.content" />
       <button>Update</button>
       <button>Delete</button>
     </div>
@@ -14,13 +14,13 @@
 <script>
 import Comment from '../components/Comment.vue'
 import axios from 'axios'
-import CreateComment from '../components/CreateComment.vue'
+// import CreateComment from '../components/CreateComment.vue'
 
 export default {
   name: 'About',
   components: {
     Comment,
-    CreateComment
+    // CreateComment
   },
   data: () => ({
     comments: []
@@ -35,9 +35,9 @@ export default {
       )
       this.comments = res.data
     },
-    addComment(comment){
-      this.comments.unshift(comment)
-    }
+    // addComment(comment){
+    //   this.comments.unshift(comment)
+    // }
     // async updateComment(comment_id){
     //   const res = await axios.put(
     //     `http://localhost:3001/api/comment/${comment_id}`
