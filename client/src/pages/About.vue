@@ -2,7 +2,11 @@
   <div>
     <h2>Who are we?</h2>
     <h3>Comments</h3>
-    <!-- <CreateComment :comments="comments" @addComment="addComment" /> -->
+      <form>
+        <input placeholder="Name" @input="handleNameChange" :value="nameContent" />
+        <input placeholder="Comment" @input="handleCommentChange" :value='commentContent' />
+        <button @click="submitComment">Submit</button>
+      </form>
     <div v-for="comment in comments" :key="comment.id">
       <Comment :name="comment.name" :content="comment.content" />
       <button>Update</button>
@@ -14,16 +18,17 @@
 <script>
 import Comment from '../components/Comment.vue'
 import axios from 'axios'
-// import CreateComment from '../components/CreateComment.vue'
+import {CreatePost} from '../services/AboutServices'
 
 export default {
   name: 'About',
   components: {
     Comment,
-    // CreateComment
   },
   data: () => ({
-    comments: []
+    comments: [],
+    nameContent: '',
+    commentContent: ''
   }),
   mounted: function() {
     this.getComments()
@@ -35,14 +40,22 @@ export default {
       )
       this.comments = res.data
     },
-    // addComment(comment){
-    //   this.comments.unshift(comment)
-    // }
-    // async updateComment(comment_id){
-    //   const res = await axios.put(
-    //     `http://localhost:3001/api/comment/${comment_id}`
-    //   )
-    // }
+    handleNameChange(event){
+      this.nameContent = event.target.value
+    },
+    handleCommentChange(event){
+      this.commentContent = event.target.value
+    },
+    async submitComment() {
+      const data = {
+        "name": this.nameContent,
+        "content": this.commentContent
+      }
+        const res = await CreatePost(data)
+        this.comments.push(res)
+
+    }
+
   }
 }
 </script>
