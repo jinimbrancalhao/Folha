@@ -2,8 +2,8 @@
   <div>
     <h2>Who are we?</h2>
     <h3>Comments</h3>
-    <div>
-      <Comment />
+    <div v-for="comment in comments" :key="comment.id">
+      <Comment :name="comment.name" :content="comment.content" />
     </div>
   </div>
 </template>
