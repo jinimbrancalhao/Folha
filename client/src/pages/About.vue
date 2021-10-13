@@ -8,9 +8,9 @@
         <button @click="submitComment">Submit</button>
       </form>
     <div v-for="comment in comments" :key="comment.id">
-      <Comment :name="comment.name" :content="comment.content" />
-      <button>Update</button>
-      <button>Delete</button>
+      <Comment :name="comment.name" :content="comment.content" :id="comment.id" />
+      <!-- <button>Update</button>
+      <button @click="deleteComment">Delete</button> -->
     </div>
   </div>
 </template>
@@ -53,8 +53,11 @@ export default {
       }
         const res = await CreatePost(data)
         this.comments.push(res)
-
-    }
+    },
+    // deleteComment(){
+    //   const res = await DeletePost()
+    //   this.comments.
+    // }
 
   }
 }

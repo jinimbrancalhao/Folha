@@ -5,6 +5,11 @@ export const CreatePost = async data => {
   return res
 }
 
+export const DeletePost = async comment_id => {
+  const res = await Client.delete(`/comment/${comment_id}`)
+  return res.data
+}
+
 // async sendComment(data){
 //   const res = await axios.post(
 //     'http://localhost:3001/api/comment', data
