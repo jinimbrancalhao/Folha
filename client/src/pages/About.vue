@@ -4,6 +4,8 @@
     <h3>Comments</h3>
     <div v-for="comment in comments" :key="comment.id">
       <Comment :name="comment.name" :content="comment.content" />
+      <button>Update</button>
+      <button>Delete</button>
     </div>
   </div>
 </template>
@@ -29,7 +31,12 @@ export default {
         'http://localhost:3001/api/comment'
       )
       this.comments = res.data
-    }
+    },
+    // async updateComment(comment_id){
+    //   const res = await axios.put(
+    //     `http://localhost:3001/api/comment/${comment_id}`
+    //   )
+    // }
   }
 }
 </script>
