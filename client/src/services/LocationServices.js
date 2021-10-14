@@ -7,4 +7,5 @@ export const GetLocations = async () => {
 
 export const GetLocationByState = async state => {
   const res = await Client.get(`/location/${state}`)
+  return res.data
 }
