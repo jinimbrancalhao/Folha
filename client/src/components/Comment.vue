@@ -30,6 +30,7 @@ export default {
   methods: {
     async deleteComment() {
       const res = await DeletePost(this.id)
+      this.$router.go()
       console.log(res, "success")
     },
     showForm() {
