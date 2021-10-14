@@ -17,8 +17,7 @@
 
 <script>
 import Comment from '../components/Comment.vue'
-import axios from 'axios'
-import {CreatePost} from '../services/AboutServices'
+import {CreatePost, GetPost} from '../services/AboutServices'
 
 export default {
   name: 'About',
@@ -35,10 +34,8 @@ export default {
   },
   methods: {
     async getComments(){
-      const res = await axios.get(
-        'http://localhost:3001/api/comment'
-      )
-      this.comments = res.data
+      const res = await GetPost()
+      this.comments = res
     },
     handleNameChange(event){
       this.nameContent = event.target.value

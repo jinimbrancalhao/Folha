@@ -14,3 +14,8 @@ export const UpdatePost = async (comment_id, data) => {
   const res = await Client.put(`/comment/${comment_id}`, data)
   return res.data
 }
+
+export const GetPost = async () => {
+  const res = await Client.get('/comment')
+  return res.data
+}
