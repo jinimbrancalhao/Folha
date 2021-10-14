@@ -23,7 +23,6 @@ export default {
     id: Number
   },
   data: ()=> ({
-    commentDetails: {},
     displayForm: false,
     nameChange: '',
     commentChange: ''
