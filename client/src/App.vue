@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <header>
+    <!-- <div class="sidebar">
+    </div> -->
       <Nav />
-    </header>
     <main>
       <router-view></router-view>
     </main>
@@ -22,5 +22,14 @@ export default {
 </script>
 
 <style>
-
+  /* .sidebar {
+    height: auto;
+    width: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  } */
+  main {
+    margin-left: 15%;
+  }
 </style>

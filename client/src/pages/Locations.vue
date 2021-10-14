@@ -24,9 +24,9 @@ export default {
     locations: [],
     searchQuery: ''
   }),
-  // mounted: function() {
-  //   this.getLocations()
-  // },
+  mounted: function() {
+    this.getLocations()
+  },
   methods: {
     async getLocations() {
       const res = await GetLocations()
@@ -35,9 +35,10 @@ export default {
     handleSearchQuery(e) {
       this.searchQuery = e.target.value
     },
-    async handleSearch() {
+    async handleSearch(e) {
+      e.preventDefault()
+      console.log("hello")
       const res = await GetLocationByState(this.searchQuery)
-      console.log(res)
       this.locations = res
     }
   }
