@@ -1,13 +1,17 @@
 <template>
   <div>
+    <h2>Find a location near you!</h2>
     <form>
       <input placeholder="Search State" :value="searchQuery" @input="handleSearchQuery" >
       <button @click="handleSearch">Search</button>
     </form>
     <button @click="getLocations">View All Locations</button>
-    <div v-for="location in locations" :key="location.id">
+    <section>
+          <div v-for="location in locations" :key="location.id">
       <LocationCard :address="location.address" :city="location.city" :state="location.state" :hours="location.hours" />
     </div>
+    </section>
+
   </div>
 </template>
 
