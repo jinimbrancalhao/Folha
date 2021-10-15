@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <div>
-      <h1 class="logo">Folha</h1>
+      <h1 class="logo"><a href="/">Folha</a></h1>
     </div>
     <router-link class="link" to="/">Home</router-link>
     <router-link class="link" to="/menu">Menu</router-link>
