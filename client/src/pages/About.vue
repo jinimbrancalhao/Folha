@@ -1,15 +1,20 @@
 <template>
   <div>
+    <section>
     <h2>Who are we?</h2>
-    <h3>Comments</h3>
+
+    </section>
+    <section>
+      <h3>Comments</h3>
       <form>
         <input placeholder="Name" @input="handleNameChange" :value="nameContent" />
         <input placeholder="Comment" @input="handleCommentChange" :value='commentContent' />
         <button @click="submitComment">Submit</button>
       </form>
-    <div v-for="comment in comments" :key="comment.id">
-      <Comment :name="comment.name" :content="comment.content" :id="comment.id" />
-    </div>
+      <div v-for="comment in comments" :key="comment.id">
+        <Comment :name="comment.name" :content="comment.content" :id="comment.id" />
+      </div>
+    </section>
   </div>
 </template>
 
