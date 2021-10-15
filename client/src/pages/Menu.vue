@@ -1,6 +1,7 @@
 <template>
   <div>
     <h2>PLEASE SELECT A MENU</h2>
+    <h3>Our menu has been specially crafted by Chef Brancalhao to offer an expeience to anyone and everyone</h3>
     <div>
       <h3 @click="getMenu">Full Menu</h3>
       <h3 @click="getAppetizers">Appetizers</h3>
