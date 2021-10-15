@@ -22,13 +22,6 @@ export default {
 </script>
 
 <style>
-  /* .sidebar {
-    height: auto;
-    width: 15%;
-    position: fixed;
-    top: 0;
-    left: 0;
-  } */
   main {
     margin-left: 15%;
   }
