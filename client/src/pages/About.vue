@@ -2,7 +2,7 @@
   <div>
     <section>
     <h2>Who are we?</h2>
-
+    <p>We believe in offering more than a meal. At Folha it's always an experience. We've brought in professionals to design our restaurant, creating a comfortable and vibrant atmosphere. We've brought Chef Brancalhao who has truly brought life and passion to our menu. Our bar and lounge is run by top talent to make sure your experience is as good as possible no matter what you visit us for!</p>
     </section>
     <section>
       <h3>Comments</h3>

@@ -25,4 +25,5 @@ export default {
   main {
     margin-left: 15%;
   }
+
 </style>
