@@ -19,7 +19,7 @@ export default {
 <style>
   .title {
     font-size: 1.35rem;
-    color: gold;
+    color: #1e022e;
   }
   .item-desc {
     color: white;

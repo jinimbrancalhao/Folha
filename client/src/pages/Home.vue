@@ -8,7 +8,6 @@
           <img :src="currentImage" alt="">
         </div>
       </transition-group>
-
       <div class="onimg">
       <h1>Restaurant | Bar | Lounge</h1>
       </div>
@@ -68,7 +67,7 @@ export default {
   .onimg {
     color: white;
     font-size: 1.25rem;
-    border: thick double gold;
+    border: thick double #e97ba7;
     border-left: none;
     border-right: none;
     width: 50%;
@@ -96,7 +95,7 @@ export default {
     font-size: 1.35rem;
   }
   .gold {
-    color: gold;
+    color: #f5a4c5;
     font-size: 2rem;
   }
   .button {
@@ -105,6 +104,6 @@ export default {
   }
   .welcome {
     font-size: 2.5rem;
-    color: gold;
+    color: #f5a4c5;
   }
 </style>

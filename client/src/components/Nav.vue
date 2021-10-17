@@ -41,9 +41,9 @@ export default {
   .logo {
     font-size: 3rem;
     text-decoration: none;
-    color: gold;
+    color: #f5a4c5;
   }
   .logo:visited {
-    color: gold;
+    color: #f5a4c5;
   }
 </style>

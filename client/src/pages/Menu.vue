@@ -29,6 +29,9 @@ export default {
   data: () => ({
     menu: []
   }),
+  mounted: function() {
+    this.getMenu()
+  },
   methods: {
     async getMenu(){
       const res = await GetMenu()
@@ -62,15 +65,20 @@ export default {
 }
 .choice {
   cursor: pointer;
-  color: gold;
+  color: #f5a4c5;
   font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin: 10px;
+  border: #e06196 5px solid;
 }
 .menu-page {
   text-align: center;
 }
 .header {
   font-size: 2rem;
-  color: gold;
+  color: #f5a4c5;
 } 
 .description {
   font-size: 1.5rem;
