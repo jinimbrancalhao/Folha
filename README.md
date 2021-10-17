@@ -17,7 +17,7 @@ This app is a website for a fine-dining restaurant named Folha. It serves as an 
 - PostgreSQL
 - Express.js
 - Vue.js
-- Node
+- Node.js
 - Heroku
 - Sequelize
 
