@@ -1,7 +1,9 @@
 <template>
   <div class="home">
-    <h1>Welcome</h1>
+    <div class="onimg">
     <h1>Restaurant | Bar | Lounge</h1>
+    </div>
+    <h1>Welcome</h1>
     <transition-group name="fade">
       <div v-for="photo in [currentIndex]" :key="photo">
         <img :src="currentImage" alt="">
@@ -58,5 +60,15 @@ export default {
   }
   .home {
     text-align: center;
+  }
+  .onimg {
+
+    color: white;
+    font-size: 1.25rem;
+    border: thick double gold;
+    border-left: none;
+    border-right: none;
+    width: 50%;
+    margin: auto;
   }
 </style>

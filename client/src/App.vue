@@ -28,10 +28,12 @@ export default {
   }
   body {
     height: 100vh;
-    background-image: url('./background.svg');
+    background-image: url('./rose-petals.svg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:right;
     background-size: cover;
+    min-height: -webkit-fill-available;
+    background-attachment: fixed;
   }
 
 

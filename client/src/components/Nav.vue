@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <div>
-      <h1 class="logo"><a href="/">Folha</a></h1>
+      <h1 class="logo"><a class="logo" href="/">Folha</a></h1>
     </div>
     <router-link class="link" to="/">Home</router-link>
     <router-link class="link" to="/menu">Menu</router-link>
@@ -27,17 +27,23 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #021b2d;
+    background-color: #38055a;
   }
   .link {
     margin: 10px;
     font-size: 1.5rem;
     text-decoration: none;
+    color: white;
   }
   .link:visited {
-    color: black;
+    color: white;
   }
   .logo {
     font-size: 2.5rem;
+    text-decoration: none;
+    color: white;
+  }
+  .logo:visited {
+    color: white;
   }
 </style>
