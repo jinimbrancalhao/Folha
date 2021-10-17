@@ -1,17 +1,19 @@
 <template>
-  <div>
-    <h2>PLEASE SELECT A MENU</h2>
-    <h3>Our menu has been specially crafted by Chef Brancalhao to offer an expeience to anyone and everyone</h3>
-    <div>
+  <div class="menu-page">
+    <h2 class="header">PLEASE SELECT A MENU</h2>
+    <h3 class="description">Our menu has been specially crafted by Chef Brancalhao to offer an expeience to anyone and everyone</h3>
+    <div class="choice">
       <h3 @click="getMenu">Full Menu</h3>
       <h3 @click="getAppetizers">Appetizers</h3>
       <h3 @click="getEntrees">Entrees</h3>
       <h3 @click="getDesserts">Desserts</h3>
       <h3 @click="getDrinks">Drinks</h3>
-      <div v-for="item in menu" :key="item.id">
-        <MenuItem :name="item.name" :description="item.description" :price="item.price" />
-      </div>
     </div>
+      <div class="menu">
+        <div  v-for="item in menu" :key="item.id">
+          <MenuItem :name="item.name" :description="item.description" :price="item.price" />
+        </div>
+      </div>
   </div>
 </template>
 
@@ -54,5 +56,25 @@ export default {
 </script>
 
 <style>
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.choice {
+  cursor: pointer;
+  color: gold;
+  font-size: 1.25rem;
+}
+.menu-page {
+  text-align: center;
+}
+.header {
+  font-size: 2rem;
+  color: gold;
+} 
+.description {
+  font-size: 1.5rem;
+  color: white;
+}
 
 </style>

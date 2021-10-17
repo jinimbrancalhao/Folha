@@ -1,23 +1,27 @@
 <template>
   <div class="home">
-    <div class="onimg">
-    <h1>Restaurant | Bar | Lounge</h1>
-    </div>
-    <h1>Welcome</h1>
-    <transition-group name="fade">
-      <div v-for="photo in [currentIndex]" :key="photo">
-        <img :src="currentImage" alt="">
+    <h1 class="welcome">Welcome</h1>
+
+    <div class="box">
+      <transition-group name="fade">
+        <div v-for="photo in [currentIndex]" :key="photo">
+          <img :src="currentImage" alt="">
+        </div>
+      </transition-group>
+
+      <div class="onimg">
+      <h1>Restaurant | Bar | Lounge</h1>
       </div>
-    </transition-group>
-    <section>
-      <h2 >Beauty in Simplicity</h2>
+    </div>
+    <section class="beauty">
+      <h2 class="gold">Beauty in Simplicity</h2>
       <p>We have an innovative design, pushing the limits to offer a truly unique dining experience. Chef Brancalhao was one of the most polarizing chefs on the scene, and he's brought that creativity and passion to our menu.</p>
-      <button><a href="/menu">View Menu</a></button>
+      <button><a class="button" href="/menu">View Menu</a></button>
     </section>
-    <section>
-      <h2>Enjoy a night out</h2>
+    <section class="night">
+      <h2 class="gold">Enjoy a night out</h2>
       <p>We have locations all over the United States. They are all held to the same standard to ensure the best possible dining experience.</p>
-      <button><a href="/locations">View Locations</a></button>
+      <button><a class="button" href="/locations">View Locations</a></button>
     </section>
   </div>
 </template>
@@ -55,14 +59,13 @@ export default {
 
 <style>
   img {
-    height: 40%;
+    height: 60vh;
     width: 100%;
   }
   .home {
     text-align: center;
   }
   .onimg {
-
     color: white;
     font-size: 1.25rem;
     border: thick double gold;
@@ -70,5 +73,38 @@ export default {
     border-right: none;
     width: 50%;
     margin: auto;
+  }
+  .box {
+    position: relative;
+    display: inline-block;
+  }
+  .box .onimg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45%;
+    width: 60%;
+  }
+  .beauty {
+    text-align: start;
+    color: white;
+    font-size: 1.35rem;
+  }
+  .night {
+    text-align: end;
+    color: white;
+    font-size: 1.35rem;
+  }
+  .gold {
+    color: gold;
+    font-size: 2rem;
+  }
+  .button {
+    text-decoration: none;
+    font-size: 1.25rem;
+  }
+  .welcome {
+    font-size: 2.5rem;
+    color: gold;
   }
 </style>

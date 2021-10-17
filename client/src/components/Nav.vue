@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <div>
-      <h1 class="logo"><a class="logo" href="/">Folha</a></h1>
+      <h1><a class="logo" href="/">Folha</a></h1>
     </div>
     <router-link class="link" to="/">Home</router-link>
     <router-link class="link" to="/menu">Menu</router-link>
@@ -31,7 +31,7 @@ export default {
   }
   .link {
     margin: 10px;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-decoration: none;
     color: white;
   }
@@ -39,11 +39,11 @@ export default {
     color: white;
   }
   .logo {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-decoration: none;
-    color: white;
+    color: gold;
   }
   .logo:visited {
-    color: white;
+    color: gold;
   }
 </style>

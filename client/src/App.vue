@@ -30,9 +30,9 @@ export default {
     height: 100vh;
     background-image: url('./rose-petals.svg');
     background-repeat: no-repeat;
-    background-position:right;
+    background-position:center;
     background-size: cover;
-    min-height: -webkit-fill-available;
+    /* min-height: -webkit-fill-available; */
     background-attachment: fixed;
   }
 

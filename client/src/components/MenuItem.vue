@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h3>{{name}}{{price}}</h3>
-    <p>{{description}}</p>
+  <div class="item">
+    <h3 class="title">{{name}} {{price}}</h3>
+    <p class="item-desc">{{description}}</p>
   </div>
 </template>
 
@@ -17,5 +17,12 @@ export default {
 </script>
 
 <style>
-
+  .title {
+    font-size: 1.35rem;
+    color: gold;
+  }
+  .item-desc {
+    color: white;
+    font-size: 1.25rem;
+  }
 </style>
