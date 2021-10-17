@@ -37,15 +37,15 @@ This app is a website for a fine-dining restaurant named Folha. It serves as an 
 
 #### Home Page
 
-![Home](./screenshots/chd.png)
+![Home](./screenshots/home.png)
 
 #### Menu Page
 
-![Menu](./screenshots/erd.png)
+![Menu](./screenshots/menu.png)
 
 #### About Page
 
-![About](./screenshots/erd.png)
+![About](./screenshots/about.png)
 
 **_Future Updates_**
 
