@@ -27,6 +27,7 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
+    background-color: #021b2d;
   }
   .link {
     margin: 10px;

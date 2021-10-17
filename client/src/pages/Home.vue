@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <h1>Welcome</h1>
     <h1>Restaurant | Bar | Lounge</h1>
     <transition-group name="fade">
@@ -55,5 +55,8 @@ export default {
   img {
     height: 40%;
     width: 100%;
+  }
+  .home {
+    text-align: center;
   }
 </style>

@@ -24,6 +24,15 @@ export default {
 <style>
   main {
     margin-left: 15%;
+    padding: 5%;
   }
+  body {
+    height: 100vh;
+    background-image: url('./background.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
 
 </style>
