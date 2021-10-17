@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <h1 class="welcome">Welcome</h1>
-
     <div class="box">
       <transition-group name="fade">
         <div v-for="photo in [currentIndex]" :key="photo">
@@ -88,11 +87,13 @@ export default {
     text-align: start;
     color: white;
     font-size: 1.35rem;
+    padding-left: 10%;
   }
   .night {
     text-align: end;
     color: white;
     font-size: 1.35rem;
+    padding-right: 10%;
   }
   .gold {
     color: #f5a4c5;
@@ -101,6 +102,7 @@ export default {
   .button {
     text-decoration: none;
     font-size: 1.25rem;
+    margin: 5px;
   }
   .welcome {
     font-size: 2.5rem;

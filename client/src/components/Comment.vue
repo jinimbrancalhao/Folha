@@ -1,15 +1,15 @@
 <template>
-<div>
-  <h3>{{name}}</h3>
-  <p>{{content}}</p>
-    <form v-if="displayForm">
-      <input placeholder="Name" @input="handleNameUpdate"  />
-      <input placeholder="Comment" @input="handleCommentUpdate" />
-      <button @click="updateComment">Submit</button>
-    </form>
-  <button @click="showForm">Update</button>
-  <button @click="deleteComment">Delete</button>
-</div>
+  <div class="ind-comment">
+    <h3 class="comment-name">{{name}}</h3>
+    <p class="comment-content">{{content}}</p>
+      <form v-if="displayForm">
+        <input placeholder="Name" @input="handleNameUpdate"  />
+        <input placeholder="Comment" @input="handleCommentUpdate" />
+        <button @click="updateComment">Submit</button>
+      </form>
+    <button class="button side" @click="showForm">Update</button>
+    <button class="button side" @click="deleteComment">Delete</button>
+  </div>
 </template>
 
 <script>
@@ -55,5 +55,15 @@ export default {
 </script>
 
 <style>
-
+  .ind-comment {
+  margin: 10px;
+  }
+  .comment-name {
+    font-size: 1.5rem;
+    color: tomato;
+  }
+  .comment-content {
+    font-size: 1.25rem;
+    color: white;
+  }
 </style>

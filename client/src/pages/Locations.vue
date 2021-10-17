@@ -1,17 +1,16 @@
 <template>
-  <div>
-    <h2>Find a location near you!</h2>
+  <div class="location">
+    <h2 class="location-heading">Find a location near you!</h2>
     <form>
-      <input placeholder="Search State" :value="searchQuery" @input="handleSearchQuery" >
-      <button @click="handleSearch">Search</button>
+      <input class="location-input" placeholder="Search State" :value="searchQuery" @input="handleSearchQuery" >
+      <button class="button" @click="handleSearch">Search</button>
     </form>
-    <button @click="getLocations">View All Locations</button>
-    <section>
-          <div v-for="location in locations" :key="location.id">
-      <LocationCard :address="location.address" :city="location.city" :state="location.state" :hours="location.hours" />
-    </div>
+    <button class="button" @click="getLocations">View All Locations</button>
+    <section class="location-grid">
+      <div v-for="location in locations" :key="location.id">
+        <LocationCard :address="location.address" :city="location.city" :state="location.state" :hours="location.hours" />
+      </div>
     </section>
-
   </div>
 </template>
 
@@ -50,5 +49,20 @@ export default {
 </script>
 
 <style>
-
+  .location {
+    text-align: center;
+  }
+  .location-heading {
+    font-size: 2rem;
+    color: #f5a4c5;
+  }
+  .location-input {
+    height: 25px;
+    text-align: center;
+    width: 150px;
+  }
+  .location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 </style>

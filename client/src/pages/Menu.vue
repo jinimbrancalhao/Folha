@@ -1,6 +1,6 @@
 <template>
   <div class="menu-page">
-    <h2 class="header">PLEASE SELECT A MENU</h2>
+    <h2 class="header">Please Select A Menu</h2>
     <h3 class="description">Our menu has been specially crafted by Chef Brancalhao to offer an expeience to anyone and everyone</h3>
     <div class="choice">
       <h3 @click="getMenu">Full Menu</h3>
@@ -84,5 +84,4 @@ export default {
   font-size: 1.5rem;
   color: white;
 }
-
 </style>
