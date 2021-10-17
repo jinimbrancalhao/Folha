@@ -104,6 +104,9 @@ export default {
     font-size: 1.25rem;
     margin: 5px;
   }
+  .button:hover {
+    font-size: 1.3rem;
+  }
   .welcome {
     font-size: 2.5rem;
     color: #f5a4c5;

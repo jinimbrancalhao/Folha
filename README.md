@@ -10,7 +10,7 @@
 
 **_Description_**
 
-This app is a website for a fine-dining restaurant named Folha. It serves as an online reference for customers to learn about the restaurant, find restaurant locations, view the menu, and create/read reviews.
+This app is a website for a fine-dining restaurant named Folha. It serves as an online reference for customers to learn about the restaurant, find all restaurant locations or search for specific locations, view the menu or specific courses, and create/read/update/delete reviews.
 
 **_Technologies Used_**
 
@@ -19,7 +19,6 @@ This app is a website for a fine-dining restaurant named Folha. It serves as an 
 - Vue.js
 - Node
 - Heroku
-- Tailwind CSS
 - Sequelize
 
 **_Getting Started_**
@@ -32,21 +31,32 @@ This app is a website for a fine-dining restaurant named Folha. It serves as an 
 
 #### Deployed Link:
 
+[Heroku]()
+
 **_Screenshots_**
 
-#### Component Hierarchy Diagram
+#### Home Page
 
-![CHD](./screenshots/chd.png)
+![Home](./screenshots/chd.png)
 
-#### Entity Relationship Diagram
+#### Menu Page
 
-![ERD](./screenshots/erd.png)
+![Menu](./screenshots/erd.png)
+
+#### About Page
+
+![About](./screenshots/erd.png)
 
 **_Future Updates_**
 
-- Feature for customers to make an online reservation
+- [ ] Online Reservation Feature
+- [ ] Integrate UI
+- [ ] Search Location by address / city
 
 **_Credits_**
 
-- Tailwind CSS
 - Stack Overflow
+- Image Slide: [digitalocean](https://www.digitalocean.com/community/tutorials/vuejs-create-image-slider)
+- Text over Image Slide: [tutorialrepublic](https://www.tutorialrepublic.com/faq/how-to-position-text-over-an-image-using-css.php)
+- Images: [Google Images](https://www.google.com/)
+- Recipes: [Google Images](https://www.google.com/)

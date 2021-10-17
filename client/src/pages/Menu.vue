@@ -73,6 +73,9 @@ export default {
   margin: 10px;
   border: #e06196 5px solid;
 }
+.choice:hover {
+  font-size: 1.3rem;
+}
 .menu-page {
   text-align: center;
 }
