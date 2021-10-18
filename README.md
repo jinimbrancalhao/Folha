@@ -50,7 +50,7 @@ This app is a website for a fine-dining restaurant named Folha. It serves as an 
 **_Future Updates_**
 
 - [ ] Online Reservation Feature
-- [ ] Integrate UI
+- [ ] Integrate a UI library
 - [ ] Search Location by address / city
 
 **_Credits_**
